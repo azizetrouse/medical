@@ -1,0 +1,399 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fafafa;
+}
+ h1 {
+    font-size: 20px;
+    text-transform: uppercase;   
+} 
+
+/*nav links*/
+
+#nav-links{
+    height: 12vh;
+    width: 84% !important;
+    background-color: #fff;
+    border-top: 2px solid #228ec0;
+    border-bottom: 6px solid #6ec8f1;
+    float: right;
+}
+
+#nav{
+    overflow: hidden;
+    display: flex;
+    width: 46% !important;
+    min-height: 10vh;
+    justify-content: space-around;
+    float: right;
+}
+.nav-content{
+    margin: 15px;
+    width: 98%;
+}
+ul{
+    display: flex;
+    list-style: none; 
+    align-items: center;
+}
+ul li {
+    margin: 8px; 
+    font-size: 15px;
+} 
+ul li a{
+    padding: 48px;
+    text-transform: uppercase;
+    width: 50px;
+    height: 40px;
+}
+.doctor h4 , #nav li a{
+   flex: 1;
+}
+
+ #links a img{
+    width: 50px;
+    height: 40px;
+}
+
+/* end nav links*/
+
+/*start input search */
+
+form{
+    background: none;
+    line-height: 5;
+    width: 100%;
+}
+form .search{
+width: 40%;
+height: 5vh;
+margin: 3px;
+border-radius: 40px;
+transition: ease-in-out 1s;
+border: 1px solid #5193d6;
+outline: none;
+}
+form .search:hover{
+    height: 6vh;
+}
+#search { 
+    width: 50px;
+    height: 30px;
+    border: 2px solid #5193d6;
+    background-image: url(./../../images/search.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    text-transform: uppercase; 
+    position: relative;
+    top: 5px;
+    border-radius: 12%;
+}
+button[type="submit"] i{
+    margin: 3px;
+   color: #ff0202;
+}
+/* end input search*/
+
+/*start row */
+.row{
+     width: 84%; 
+     margin: auto;
+}
+.btn{
+    font-size: 125%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+}	
+#form-container h1{
+    line-height: 3;
+    color: #2c71f1;
+    height: 60px; 
+    display: flex;
+    margin: 3px;
+    justify-content: space-around;
+}
+
+.form-control, .btn {
+    border-radius: 5px;
+    height: 40px;
+    width: 45px;
+}
+.form-control, .btn img{
+    width: 100%;
+    height: 100%;
+}
+a img{
+    width: 100%;
+    height: 100%;
+}
+#button{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+.btn-primary{
+    height: 50px;
+    width: 120px;
+    padding-bottom: 10px;
+}
+.login-form-container{
+/* #form-container { */
+    width: 68%;
+    margin: 0px;
+    position: absolute;
+    top: -12%;
+    left: 20%;
+    margin-top: 30vh;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #eee;
+}
+#form{
+    z-index: 1;
+    display: none;
+}
+#form h1{
+    font-size: 1em;
+    line-height: 3rem;
+    color: #2887f3;
+}
+h1{
+    font-size: 20px;
+}
+h1 #add{
+    overflow: hidden;
+    background: white;
+    border: none;  
+    color: #2c71f1;
+}
+/*end row*/
+
+
+/*start table*/
+
+#form-container {
+    width: 76% !important; 
+    height: 570px;
+    color: rgb(22, 223, 49);
+    background-color: #fff;
+     border: 3px solid #BBB;
+    margin: 6px auto; 
+    overflow-x: scroll;
+    overflow-y: scroll; 
+}
+.table{
+    width: 100%;
+   display: table; 
+   overflow: hidden;
+}
+
+    .btn-add {
+        float: right;
+}
+.group{
+    display: flex;
+    padding-left: 0px;
+    text-align: center;
+}
+/*index.php and profil.php*/
+.boox{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: 16px auto;
+    justify-content: space-between;
+    text-align: center;
+} 
+
+.box{
+    width: 20%;
+    height: 150px;
+    display: inline-block;                                       
+    background-color: #f6f6f6;
+    border: 2px solid rgb(255, 118, 94);
+    outline: none;
+    overflow: hidden;
+    color: black;
+    padding: 10px; 
+    border-radius: 20px;
+    margin: 3px 45px;
+    justify-content: start;
+}
+.boox .box p{
+    width: 100%;
+    height: 40%; 
+    font-size: 19px;
+}
+.boox .box h6{
+
+}
+/*profil end her*/
+.boox .box img{
+    width: 40%;
+    height: 40%;
+    float: left;
+}
+.boox .box h2{
+    width: 40%;
+    height: 40%;
+    float: right;
+    padding: 9px;
+   
+}  /*end index
+    
+/*end table*/
+
+     /* start nav.php*/
+.nav-bar{
+    width: 16%;
+    min-height: 300px;
+    margin: 0;
+    float: left;
+}
+.doctor{
+    height: 12vh;
+    width: 100%; 
+    text-align: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-top: 2px solid #228ec0;
+    border-bottom: 6px solid #6ec8f1;
+}
+.doctor h4{
+    padding: 16px;
+}
+.doctor h4 img{
+    width: 60px;
+    height: 40px;
+}
+ .boxx{
+    width: 100%;
+    height: 168px;
+}
+.boxx img{
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     margin-top: 2px;
+     position: relative;
+     left: 32%;
+}
+.boxx h4{
+     text-align: center;
+     text-decoration: palegreen;
+}
+.nav-bar li {
+    background: none; 
+    display: block;
+    border-radius: 12px;
+    margin: 1px;
+    padding: 9px;
+    text-align: center;
+}
+#select{
+    background: none;
+    border: none;
+    margin-left: 70px;
+}
+#time{
+    border: 1px solid #616466;
+    padding: 8px;border-radius: 9px;
+}
+#date{
+    border: 1px solid #626566;
+    padding: 8px;border-radius: 9px;
+}
+ li form button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+b{
+    background: none; 
+    display: block;
+    border-radius: 12px;
+    margin: 1px;
+    padding: 10px;
+    text-align: center;
+}
+#color1{
+    background-color: #fff !important;
+}
+#color2{
+    background-color: #000000;
+}
+
+.nav-bar li a{
+     margin: 10px;
+     padding: 4px;
+     text-decoration: none;
+     color: #000000;
+     font-size: 1rem;
+}
+/*end nav.php*/
+
+
+/* start footer*/
+footer{
+    height: 10px;
+    width: 100%;
+    clear: both;
+}
+/*end footer*/
+
+/*start medicament.php*/
+#window{
+   display: none;
+   width: 100%;
+   height: 100%;
+}
+.login-form{
+   width: 98%;
+   height: 80%;
+   margin:auto;
+   background-color: #fff;
+   padding: 50px; 
+   border-radius: 5px;
+
+}
+/* .form-container {
+   width: inherit;
+   margin-top: 10vh;
+} */
+
+/*end medcament.php*/
+
+.btn-add {
+   float: right;
+   border: none;
+   background: none;
+   color: #000;
+}
+form{
+   text-align: center;
+}
+table{
+   width: 100%;
+   text-align: center;
+   border-collapse: collapse;
+   font-size: 15px;
+}
+
+/*start window.php*/
+
+
+/*end window.php*/
+
+/* #med{
+    display: none; 
+} */
+#submit{
+    position: absolute;
+    top: -290%;
+    left: 30%;
+}
