@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+// coniction
 define("medical", "http://127.0.0.1/medical/");
 define("admin", "http://127.0.0.1/medical/admin/");
 define("assets", "http://127.0.0.1/medical/assets/css/");
