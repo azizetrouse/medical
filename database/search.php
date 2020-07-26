@@ -1,6 +1,6 @@
 <?php  
     
-  $sql = 'SELECT * FROM patients ';  
+  $sql = 'SELECT * FROM patients';  
    $result = $conn->query($sql);
    echo "jkkk";
    ?>

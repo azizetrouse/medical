@@ -1,12 +1,11 @@
 <?php  
-session_start();
- include ('./inc/header.php');
-include ('./inc/nav.php');
- 
+    include('../../config.php'); 
+    include (style."/nav.php");
+    include (style."/header.php");
 
+    
     $row = [];
     if (isset($_GET['id'])){
-        include ('./database/connection.php'); 
         $pId = $_GET['id'];
         $sql = 'SELECT * FROM patients WHERE id="'.$pId.'"';
         $result = $conn->query($sql);
@@ -17,14 +16,15 @@ include ('./inc/nav.php');
     
 ?>
 
-   <div id="form">
-    <!-- <h1>Ajouter un nouveau patient</h1> -->
-     <div class="row">
-    <div id="form-container" class="form-container" style=" width: 90% !important;">
-    <form action="./database/patient.php" method="post">
+<div id="form">
+    
+      <div class="row">
+    <div  id="form-container" style="width: 70%;"> 
+    <?php require '../function/message.php' ?>
+    <form action="2patient.php" method="post">
         <input name="type" type="hidden" class="form-control" value="<?= $_GET['id'] ? 'update' : 'add' ?>">
         <input name="id" type="hidden" class="form-control" value="<?= $_GET['id'] ?? '' ?>">
-      
+          <h1></h1>
             <div class="col">
                 <div class="form-group">
                     <input name="nom" type="text" class="form-control" placeholder="Nom" value="<?= $row['nom'] ?? '' ?>">
@@ -32,9 +32,12 @@ include ('./inc/nav.php');
                 <div class="form-group">
                     <input name="prenom" type="text" class="form-control" placeholder="Prenom" value="<?= $row['prenom'] ?? '' ?>">
                 </div>
+
                 <div class="form-group">
                     <input name="reference" type="text" class="form-control" placeholder="Reference" value="<?= $row['reference'] ?? '' ?>">
                 </div>
+                </div>
+                <div class="col">
                 <div class="form-group">
                     <input name="cin" type="text" class="form-control" placeholder="CIN" value="<?= $row['cin'] ?? '' ?>">
                 </div>
@@ -85,7 +88,7 @@ include ('./inc/nav.php');
                     </select>
                 </div>
                 <div id="button">
-                <button type="submit" id="submit" class="btn btn-primary" >Envoyer</button>
+                <button type="submit" id="submit" class="btn btn-primary m-4" >Envoyer</button>
                </div>
             </div>
         </div>
@@ -93,7 +96,3 @@ include ('./inc/nav.php');
   </div>
 </div>
 
-  <?php
-
-  ?>
-  <script src="script.js/port.js"></script>

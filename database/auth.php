@@ -1,11 +1,12 @@
  <?php
-     session_start();
+session_start();
              include ('./connection.php');
 
-            $user = htmlspecialchars(strtolower(trim($_POST["username"])));
+            $user = ($_POST["username"] );
             $password = $_POST["password"];
             
-            $sql = 'SELECT * FROM users WHERE username="'.$user.'" AND password="'.$password.'"';
+            $sql = 'SELECT * FROM users WHERE username="'.$user.'" 
+            AND password="'.$password.'"';
             $_SESSION['name'] = $user;
             
             $result = $conn->query($sql);
@@ -14,7 +15,7 @@
             
             if($row === 1 ) {
             
-            header("Location: http://localhost/pr/index.php");
+            header ("Location: http://localhost/medical/index.php");
             
             }
 

@@ -1,11 +1,11 @@
 <?php 
-include('./database/connection.php');
-$mId = $_GET['id']; // id=2
-// sql to delete a record
+ include '../function/db.php';
+$mId = $_GET['id'];
+
 $sql = "DELETE FROM medicaments WHERE id=$mId";
 
 if ($conn->query($sql) === TRUE) {
-    header("Location: http://localhost/pr/medicaments.php");
+    header("Location: http://127.0.0.1/medical/admin/med/");
 } else {
     echo "Error deleting record: " . $conn->error;
 }

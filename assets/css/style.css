@@ -1,13 +1,13 @@
 
+html{
+    font-size: 17px;
+    font-family: monospace;
+}
 body {
     margin: 0px;
     padding: 0px;
     background-color: #fafafa;
 }
- h1 {
-    font-size: 20px;
-    text-transform: uppercase;   
-} 
 
 /*nav links*/
 
@@ -28,227 +28,84 @@ body {
     justify-content: space-around;
     float: right;
 }
-.nav-content{
-    margin: 15px;
-    width: 98%;
+#nav a img{
+    width: 90px;
+    height: 90px;
+    padding: 16px;
 }
-ul{
-    display: flex;
-    list-style: none; 
-    align-items: center;
-}
-ul li {
-    margin: 8px; 
-    font-size: 15px;
+.search{
+    color: #000000;
+    border: 1px solid #ff765e;  
+    height: 30px;margin: auto;
 } 
-ul li a{
-    padding: 48px;
-    text-transform: uppercase;
-    width: 50px;
-    height: 40px;
-}
-.doctor h4 , #nav li a{
-   flex: 1;
-}
-
- #links a img{
-    width: 50px;
-    height: 40px;
-}
-
-/* end nav links*/
-
-/*start input search */
-
-form{
-    background: none;
-    line-height: 5;
-    width: 100%;
-}
-form .search{
-width: 40%;
-height: 5vh;
-margin: 3px;
-border-radius: 40px;
-transition: ease-in-out 1s;
-border: 1px solid #5193d6;
-outline: none;
-}
-form .search:hover{
-    height: 6vh;
-}
-#search { 
-    width: 50px;
-    height: 30px;
-    border: 2px solid #5193d6;
-    background-image: url(./../../images/search.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    text-transform: uppercase; 
-    position: relative;
-    top: 5px;
-    border-radius: 12%;
-}
-button[type="submit"] i{
-    margin: 3px;
-   color: #ff0202;
-}
-/* end input search*/
-
-/*start row */
 .row{
      width: 84%; 
      margin: auto;
 }
-.btn{
-    font-size: 125%;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Raleway', sans-serif;
-}	
-#form-container h1{
-    line-height: 3;
-    color: #2c71f1;
-    height: 60px; 
+
+#form-container h1{   
+    justify-content: space-between;
     display: flex;
-    margin: 3px;
-    justify-content: space-around;
-}
-
-.form-control, .btn {
-    border-radius: 5px;
-    height: 40px;
-    width: 45px;
-}
-.form-control, .btn img{
-    width: 100%;
-    height: 100%;
-}
-a img{
-    width: 100%;
-    height: 100%;
-}
-#button{
-    width: 100%;
-    text-align: center;
-    margin: 20px;
-}
-.btn-primary{
-    height: 50px;
-    width: 120px;
-    padding-bottom: 10px;
-}
-.login-form-container{
-/* #form-container { */
-    width: 68%;
-    margin: 0px;
-    position: absolute;
-    top: -12%;
-    left: 20%;
-    margin-top: 30vh;
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px #eee;
-}
-#form{
-    z-index: 1;
-    display: none;
-}
-#form h1{
-    font-size: 1em;
-    line-height: 3rem;
-    color: #2887f3;
-}
-h1{
-    font-size: 20px;
-}
-h1 #add{
-    overflow: hidden;
-    background: white;
-    border: none;  
+    font-size: 18px;
     color: #2c71f1;
+    width: 80%;
+    margin: 7px auto;
 }
-/*end row*/
-
-
-/*start table*/
-
 #form-container {
     width: 76% !important; 
     height: 570px;
     color: rgb(22, 223, 49);
     background-color: #fff;
-     border: 3px solid #BBB;
-    margin: 6px auto; 
+    border: 3px solid #BBB;
+    margin: 2px auto; 
     overflow-x: scroll;
     overflow-y: scroll; 
 }
 .table{
     width: 100%;
-   display: table; 
-   overflow: hidden;
-}
-
-    .btn-add {
-        float: right;
-}
-.group{
-    display: flex;
-    padding-left: 0px;
+   
     text-align: center;
 }
-/*index.php and profil.php*/
+.btn-group{
+    width: 100px; 
+    display: flex; 
+    height: 50px;
+}
 .boox{
     width: 100%;
     height: 100%;
-    display: inline-block;
+    display: flex;
     margin: 16px auto;
     justify-content: space-between;
     text-align: center;
 } 
 
 .box{
-    width: 20%;
-    height: 150px;
-    display: inline-block;                                       
+    width: 11%;
+    height: 20%;     
+    display: flex;                        
     background-color: #f6f6f6;
-    border: 2px solid rgb(255, 118, 94);
+    border: 2px solid #ff765e;
     outline: none;
     overflow: hidden;
     color: black;
     padding: 10px; 
     border-radius: 20px;
     margin: 3px 45px;
-    justify-content: start;
 }
-.boox .box p{
-    width: 100%;
-    height: 40%; 
-    font-size: 19px;
+.boox .box .href{
+   /* text-align: center;
+    font-size: 19px; */
+    line-height: 5;
+    float: right;
 }
-.boox .box h6{
 
-}
-/*profil end her*/
 .boox .box img{
-    width: 40%;
+    width: 37%;
     height: 40%;
     float: left;
 }
-.boox .box h2{
-    width: 40%;
-    height: 40%;
-    float: right;
-    padding: 9px;
-   
-}  /*end index
-    
-/*end table*/
-
-     /* start nav.php*/
+/*   */
 .nav-bar{
     width: 16%;
     min-height: 300px;
@@ -301,12 +158,12 @@ h1 #add{
     margin-left: 70px;
 }
 #time{
-    border: 1px solid #616466;
-    padding: 8px;border-radius: 9px;
+    padding: 5px;
+    border: 0.39px solid #22538b;
 }
 #date{
-    border: 1px solid #626566;
-    padding: 8px;border-radius: 9px;
+    padding: 5px;
+    border: 0.39px solid #22538b;
 }
  li form button{
     width: 25px;
@@ -335,65 +192,27 @@ b{
      color: #000000;
      font-size: 1rem;
 }
-/*end nav.php*/
-
-
-/* start footer*/
-footer{
-    height: 10px;
-    width: 100%;
-    clear: both;
-}
-/*end footer*/
-
-/*start medicament.php*/
-#window{
-   display: none;
-   width: 100%;
-   height: 100%;
-}
-.login-form{
-   width: 98%;
-   height: 80%;
-   margin:auto;
-   background-color: #fff;
-   padding: 50px; 
-   border-radius: 5px;
-
-}
-/* .form-container {
-   width: inherit;
-   margin-top: 10vh;
-} */
-
-/*end medcament.php*/
-
-.btn-add {
+ .btn-add {
    float: right;
    border: none;
-   background: none;
-   color: #000;
+} 
+img{
+    width: 100%;
 }
-form{
-   text-align: center;
+@media print{
+    .nav-links{
+        display: none;
+    }
+    .nav-bar{
+        display: none;
+    }
+    #form-container {
+        width: 100%;
+        overflow-x: none;
+        overflow-y: none; 
 }
-table{
-   width: 100%;
-   text-align: center;
-   border-collapse: collapse;
-   font-size: 15px;
+header{
+    display: none;
 }
 
-/*start window.php*/
-
-
-/*end window.php*/
-
-/* #med{
-    display: none; 
-} */
-#submit{
-    position: absolute;
-    top: -290%;
-    left: 30%;
 }

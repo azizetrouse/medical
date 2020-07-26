@@ -12,7 +12,7 @@ $_SESSION['description'] = $description;
 
 if ($conn->query($sql) === TRUE) {
     // echo "added with success !";
-    header("Location: http://localhost/pr/medicaments.php");
+    header("Location: http://localhost/medical");
 } else {
     // echo "Error: " . $sql . "<br>" . $conn->error;
 }
